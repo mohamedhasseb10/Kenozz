@@ -1,0 +1,6 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Application/Extensions/Designable+.swift
+- Repository/NETWORK+ENDPOINTS.swift
+- Pods
+- node_modules
+- R.generated.swift

@@ -1,0 +1,21 @@
+//
+//  Staging.xcconfig
+//  Src
+//
+//  Created by Src on 2/23/20.
+//  Copyright © 2020 Src. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-Src/Pods-Src.debug(staging).xcconfig"
+
+// Server URL
+BASE_URL = https:/$()/put-BaseUrl- here
+REGISTRATION_URL = https:/$()/put-RegistrationBaseUrl-here
+ACCOUNT_URL = https:/$()/dev-put-AccountBaseUrl-here
+
+
+// App Settings
+APP_NAME = Src
+APP_BUNDLE_ID = com.test.Src
