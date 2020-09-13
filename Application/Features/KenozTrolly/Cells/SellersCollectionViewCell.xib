@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SellersCollectionViewCell" customModule="Src" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZX-26-B3S">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="118"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seller_image" translatesAutoresizingMaskIntoConstraints="NO" id="oK9-zW-Dhm">
+                                <rect key="frame" x="0.0" y="0.0" width="142" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="eoB-wM-JOh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم البائع" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="PZl-ni-nXY">
+                                <rect key="frame" x="2" y="91.5" width="138" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95280188320000003" green="0.95741778609999995" blue="0.96028143170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PZl-ni-nXY" secondAttribute="bottom" constant="10" id="D0l-Q5-0L8"/>
+                            <constraint firstItem="oK9-zW-Dhm" firstAttribute="leading" secondItem="UZX-26-B3S" secondAttribute="leading" id="JAW-Pg-jgR"/>
+                            <constraint firstItem="oK9-zW-Dhm" firstAttribute="top" secondItem="UZX-26-B3S" secondAttribute="top" id="hrx-Uj-TBb"/>
+                            <constraint firstAttribute="trailing" secondItem="PZl-ni-nXY" secondAttribute="trailing" constant="2" id="o5J-eP-rMH"/>
+                            <constraint firstItem="PZl-ni-nXY" firstAttribute="leading" secondItem="UZX-26-B3S" secondAttribute="leading" constant="2" id="pxm-Hu-ZDS"/>
+                            <constraint firstAttribute="trailing" secondItem="oK9-zW-Dhm" secondAttribute="trailing" id="qRG-b8-jtc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UZX-26-B3S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="89c-B1-Q0R"/>
+                <constraint firstItem="UZX-26-B3S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RNW-1K-DV6"/>
+                <constraint firstAttribute="trailing" secondItem="UZX-26-B3S" secondAttribute="trailing" id="orq-eD-Vnw"/>
+                <constraint firstAttribute="bottom" secondItem="UZX-26-B3S" secondAttribute="bottom" id="z8H-7J-qFi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="142" height="118"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="sellerImage" destination="oK9-zW-Dhm" id="Bum-7K-W2h"/>
+                <outlet property="sellerNameLabel" destination="PZl-ni-nXY" id="vhp-LX-DxE"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="101.11607142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="seller_image" width="180" height="176"/>
+    </resources>
+</document>

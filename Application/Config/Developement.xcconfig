@@ -15,8 +15,11 @@
 BASE_URL = https:/$()/put-BaseUrl- here
 REGISTRATION_URL = https:/$()/put-RegistrationBaseUrl-here
 ACCOUNT_URL = https:/$()/dev-put-AccountBaseUrl-here
-
-
+GULF_HORSEQ = https:/$()/gulfhorseq8.com
+SOUQ_VIS = https:/$()/souqvis.com
+KUWAIT_FACTORIES = https:/$()/kuwait-factories.com
+MEDICAL_HIGHCODER = https:/$()/medical.highcoder.com
+HIGHCODER = https:/$()/hourse.highcoder.com
 // App Settings
-APP_NAME = Src (dev)
-APP_BUNDLE_ID = com.test.Src.dev
+APP_NAME = كنوز
+APP_BUNDLE_ID = com.kenoz

@@ -1,0 +1,129 @@
+{
+    "success": true,
+    "data": {
+        "recentArriveItems": [
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            }
+        ],
+        "bestSellersItems": [
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            }
+        ],
+        "bestProductsItems": [
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            }
+        ],
+        "productsSections": [
+            {
+              "id": "1",
+              "name": "Horse Boot",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "Horse Boot",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "Horse Boot",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "Horse Boot",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "Horse Boot",
+              "image": null
+            }
+        ]
+    },
+    "message": 200
+}

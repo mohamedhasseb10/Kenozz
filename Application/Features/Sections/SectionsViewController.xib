@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SectionsViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="dA1-jf-j3h" customClass="SectionsViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="W1g-FN-nlf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topimage" translatesAutoresizingMaskIntoConstraints="NO" id="ODk-0t-mhZ">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-Kb-8s4">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVe-jd-fl4">
+                                <rect key="frame" x="184.5" y="15.5" width="45" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-63-MEN">
+                                <rect key="frame" x="385" y="16.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="nkd-lx-4x1"/>
+                                    <constraint firstAttribute="width" constant="22" id="w23-wB-Ve0"/>
+                                </constraints>
+                                <state key="normal" image="menu2"/>
+                                <connections>
+                                    <action selector="toogleMenuTapped:" destination="dA1-jf-j3h" eventType="touchUpInside" id="Hbh-yY-Sqw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83a-6H-xrW">
+                                <rect key="frame" x="7" y="15" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="JIR-2Y-IrG"/>
+                                    <constraint firstAttribute="height" constant="25" id="gyp-gb-jvE"/>
+                                </constraints>
+                                <state key="normal" image="ic_back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="dA1-jf-j3h" eventType="touchUpInside" id="hlj-QM-0Xf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EVe-jd-fl4" firstAttribute="centerX" secondItem="EbY-Kb-8s4" secondAttribute="centerX" id="EN8-pz-rw1"/>
+                            <constraint firstAttribute="trailing" secondItem="8hq-63-MEN" secondAttribute="trailing" constant="7" id="KJP-FR-7ms"/>
+                            <constraint firstItem="8hq-63-MEN" firstAttribute="centerY" secondItem="EVe-jd-fl4" secondAttribute="centerY" id="Lb4-To-AOo"/>
+                            <constraint firstAttribute="height" constant="55" id="VI6-PH-HQc"/>
+                            <constraint firstItem="83a-6H-xrW" firstAttribute="leading" secondItem="EbY-Kb-8s4" secondAttribute="leading" constant="7" id="XhH-gV-Iyi"/>
+                            <constraint firstItem="83a-6H-xrW" firstAttribute="centerY" secondItem="EVe-jd-fl4" secondAttribute="centerY" id="qlu-i9-BkM"/>
+                            <constraint firstItem="EVe-jd-fl4" firstAttribute="centerY" secondItem="EbY-Kb-8s4" secondAttribute="centerY" id="s0n-Lp-g2s"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-kO-na8">
+                        <rect key="frame" x="8" y="109" width="398" height="787"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5FV-eS-EOB">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" red="0.97632938619999998" green="0.98094826940000002" blue="0.98380786180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="ODk-0t-mhZ" firstAttribute="leading" secondItem="EbY-Kb-8s4" secondAttribute="leading" id="2o4-PS-Qlb"/>
+                    <constraint firstItem="Z6L-kO-na8" firstAttribute="bottom" secondItem="W1g-FN-nlf" secondAttribute="bottom" id="8He-Yg-7ge"/>
+                    <constraint firstItem="EbY-Kb-8s4" firstAttribute="leading" secondItem="nYG-Om-x85" secondAttribute="leading" id="IPG-4B-cEW"/>
+                    <constraint firstItem="nYG-Om-x85" firstAttribute="trailing" secondItem="EbY-Kb-8s4" secondAttribute="trailing" id="P0r-hl-Dny"/>
+                    <constraint firstItem="Z6L-kO-na8" firstAttribute="leading" secondItem="nYG-Om-x85" secondAttribute="leading" constant="8" id="R92-wC-car"/>
+                    <constraint firstItem="ODk-0t-mhZ" firstAttribute="trailing" secondItem="EbY-Kb-8s4" secondAttribute="trailing" id="Tpc-TQ-S4G"/>
+                    <constraint firstItem="ODk-0t-mhZ" firstAttribute="bottom" secondItem="EbY-Kb-8s4" secondAttribute="bottom" id="U2C-3H-vpJ"/>
+                    <constraint firstItem="nYG-Om-x85" firstAttribute="trailing" secondItem="Z6L-kO-na8" secondAttribute="trailing" constant="8" id="bls-9h-qN2"/>
+                    <constraint firstItem="EbY-Kb-8s4" firstAttribute="top" secondItem="nYG-Om-x85" secondAttribute="top" constant="-5" id="o1I-Rh-xyU"/>
+                    <constraint firstItem="ODk-0t-mhZ" firstAttribute="top" secondItem="EbY-Kb-8s4" secondAttribute="top" id="qbI-ZA-KDR"/>
+                    <constraint firstItem="Z6L-kO-na8" firstAttribute="top" secondItem="ODk-0t-mhZ" secondAttribute="bottom" constant="15" id="wIc-Mb-gwA"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="nYG-Om-x85"/>
+            </view>
+            <connections>
+                <outlet property="sectionsCollectionView" destination="Z6L-kO-na8" id="HON-pF-gGu"/>
+                <outlet property="titleLabel" destination="EVe-jd-fl4" id="XsX-ZN-dzC"/>
+            </connections>
+            <point key="canvasLocation" x="-433.33333333333337" y="82.366071428571431"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="menu2" width="25" height="25"/>
+        <image name="topimage" width="1125" height="264.5"/>
+    </resources>
+</document>

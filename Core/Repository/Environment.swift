@@ -2,8 +2,8 @@
 //  Environment.swift
 //  Src
 //
-//  Created by xWARE on 5/4/20.
-//  Copyright © 2020 xWARE. All rights reserved.
+//  Created by BobaHasseb on 5/4/20.
+//  Copyright © 2020 BobaHasseb. All rights reserved.
 //
 
 import Foundation
@@ -16,6 +16,11 @@ public enum Environment {
             static let accountURL = "ACCOUNT_URL"
             static let organizationID = "ORGANIZATION_ID"
             static let appID = "APP_ID"
+            static let gulfhorseq = "GULF_HORSEQ"
+            static let souqvis = "SOUQ_VIS"
+            static let kuwaitfactories = "KUWAIT_FACTORIES"
+            static let medicalhighcoder = "MEDICAL_HIGHCODER"
+            static let hoursehighcoder = "HIGHCODER"
         }
 
     // MARK: - Plist
@@ -56,7 +61,51 @@ public enum Environment {
         }
         return accountURLstring
     }()
-
+    static let gulfhorseqURL: String = {
+        guard let gulfhorseqURLstring = Environment.infoDictionary[PlistKeys.gulfhorseq] as? String else {
+            fatalError("gulfhorseq URL not set in plist for this environment")
+        }
+        guard let url = URL(string: gulfhorseqURLstring) else {
+            fatalError("gulfhorseq URL is invalid")
+        }
+        return gulfhorseqURLstring
+    }()
+    static let souqvisURL: String = {
+        guard let souqvisURLstring = Environment.infoDictionary[PlistKeys.souqvis] as? String else {
+            fatalError("souqvis URL not set in plist for this environment")
+        }
+        guard let url = URL(string: souqvisURLstring) else {
+            fatalError("souqvis URL is invalid")
+        }
+        return souqvisURLstring
+    }()
+    static let kuwaitfactoriesURL: String = {
+        guard let kuwaitfactoriesURLstring = Environment.infoDictionary[PlistKeys.kuwaitfactories] as? String else {
+            fatalError("kuwaitfactories URL not set in plist for this environment")
+        }
+        guard let url = URL(string: kuwaitfactoriesURLstring) else {
+            fatalError("kuwaitfactories URL is invalid")
+        }
+        return kuwaitfactoriesURLstring
+    }()
+    static let medicalhighcoderURL: String = {
+        guard let medicalhighcoderURLstring = Environment.infoDictionary[PlistKeys.medicalhighcoder] as? String else {
+            fatalError("medicalhighcoder URL not set in plist for this environment")
+        }
+        guard let url = URL(string: medicalhighcoderURLstring) else {
+            fatalError("medicalhighcoder URL is invalid")
+        }
+        return medicalhighcoderURLstring
+    }()
+    static let hoursehighcoderURL: String = {
+        guard let hoursehighcoderURLstring = Environment.infoDictionary[PlistKeys.hoursehighcoder] as? String else {
+            fatalError("hoursehighcoder URL not set in plist for this environment")
+        }
+        guard let url = URL(string: hoursehighcoderURLstring) else {
+            fatalError("hoursehighcoder URL is invalid")
+        }
+        return hoursehighcoderURLstring
+    }()
     static let organizationID: String = {
         guard let organizationID = Environment.infoDictionary[PlistKeys.organizationID] as? String else {
             fatalError("organization ID not set in plist for this environment")

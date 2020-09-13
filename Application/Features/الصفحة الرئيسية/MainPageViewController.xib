@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="tJk-q5-3CT" customClass="MainPageViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="9uP-Gn-ESw">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCm-6e-ArL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="L6L-8X-CLJ">
+                        <rect key="frame" x="32" y="797" width="350" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-1T-EsW">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3oR-IQ-023"/>
+                                    <constraint firstAttribute="width" constant="150" id="XSw-bz-CFx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="كنوز تروللي"/>
+                                <connections>
+                                    <action selector="kenozTrollyAction:" destination="tJk-q5-3CT" eventType="touchUpInside" id="jZH-QG-pp0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO2-xM-4dr">
+                                <rect key="frame" x="200" y="0.0" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.50588235290000005" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="e7g-1Z-0PK"/>
+                                    <constraint firstAttribute="width" constant="150" id="n0n-Z2-ju2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="مجلة كنوز">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="kenozMagazinAction:" destination="tJk-q5-3CT" eventType="touchUpInside" id="vNP-wd-tx8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_page_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Rh4-GJ-8ws">
+                        <rect key="frame" x="83" y="130" width="331" height="627"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMu-YM-9iM">
+                        <rect key="frame" x="83" y="130" width="331" height="627"/>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.50588235290000005" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_page_white" translatesAutoresizingMaskIntoConstraints="NO" id="AVE-ej-vsE">
+                        <rect key="frame" x="83" y="165" width="291.5" height="557"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_page_image" translatesAutoresizingMaskIntoConstraints="NO" id="WoV-VL-lzw">
+                        <rect key="frame" x="0.0" y="180" width="359.5" height="527"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstItem="WoV-VL-lzw" firstAttribute="trailing" secondItem="AVE-ej-vsE" secondAttribute="trailing" constant="-15" id="1Xb-XV-ji1"/>
+                    <constraint firstItem="DMu-YM-9iM" firstAttribute="leading" secondItem="Rh4-GJ-8ws" secondAttribute="leading" id="83B-ID-jk8"/>
+                    <constraint firstItem="LCm-6e-ArL" firstAttribute="top" secondItem="9uP-Gn-ESw" secondAttribute="top" id="E29-Jx-GcO"/>
+                    <constraint firstItem="WoV-VL-lzw" firstAttribute="leading" secondItem="D5p-S4-1Bc" secondAttribute="leading" id="EMZ-WS-gqa"/>
+                    <constraint firstItem="Rh4-GJ-8ws" firstAttribute="height" secondItem="9uP-Gn-ESw" secondAttribute="height" multiplier="0.7" id="HvG-4w-6MR"/>
+                    <constraint firstItem="DMu-YM-9iM" firstAttribute="trailing" secondItem="Rh4-GJ-8ws" secondAttribute="trailing" id="InO-lF-7tc"/>
+                    <constraint firstItem="LCm-6e-ArL" firstAttribute="leading" secondItem="D5p-S4-1Bc" secondAttribute="leading" id="Ma4-iu-oBA"/>
+                    <constraint firstItem="AVE-ej-vsE" firstAttribute="leading" secondItem="Rh4-GJ-8ws" secondAttribute="leading" id="O8l-cR-KKs"/>
+                    <constraint firstItem="WoV-VL-lzw" firstAttribute="bottom" secondItem="AVE-ej-vsE" secondAttribute="bottom" constant="-15" id="Rbn-6p-3jD"/>
+                    <constraint firstItem="WoV-VL-lzw" firstAttribute="top" secondItem="AVE-ej-vsE" secondAttribute="top" constant="15" id="WoB-vz-HWn"/>
+                    <constraint firstItem="DMu-YM-9iM" firstAttribute="bottom" secondItem="Rh4-GJ-8ws" secondAttribute="bottom" id="cux-Dz-tX1"/>
+                    <constraint firstItem="D5p-S4-1Bc" firstAttribute="bottom" secondItem="L6L-8X-CLJ" secondAttribute="bottom" constant="30" id="czF-iJ-jYU"/>
+                    <constraint firstAttribute="bottom" secondItem="LCm-6e-ArL" secondAttribute="bottom" id="exg-d5-O2c"/>
+                    <constraint firstItem="D5p-S4-1Bc" firstAttribute="trailing" secondItem="Rh4-GJ-8ws" secondAttribute="trailing" id="fMX-z0-sXQ"/>
+                    <constraint firstItem="D5p-S4-1Bc" firstAttribute="trailing" secondItem="LCm-6e-ArL" secondAttribute="trailing" id="hFr-cX-Bxk"/>
+                    <constraint firstItem="L6L-8X-CLJ" firstAttribute="top" secondItem="Rh4-GJ-8ws" secondAttribute="bottom" constant="40" id="kyC-VX-t9i"/>
+                    <constraint firstItem="AVE-ej-vsE" firstAttribute="top" secondItem="Rh4-GJ-8ws" secondAttribute="top" constant="35" id="pr6-NS-jwY"/>
+                    <constraint firstItem="DMu-YM-9iM" firstAttribute="top" secondItem="Rh4-GJ-8ws" secondAttribute="top" id="pvi-w7-w3c"/>
+                    <constraint firstItem="L6L-8X-CLJ" firstAttribute="centerX" secondItem="9uP-Gn-ESw" secondAttribute="centerX" id="qz2-ow-vyn"/>
+                    <constraint firstItem="Rh4-GJ-8ws" firstAttribute="width" secondItem="9uP-Gn-ESw" secondAttribute="width" multiplier="0.8" id="rvZ-iz-78r"/>
+                    <constraint firstItem="AVE-ej-vsE" firstAttribute="width" secondItem="Rh4-GJ-8ws" secondAttribute="width" multiplier="0.88" id="x43-t2-Jna"/>
+                    <constraint firstItem="AVE-ej-vsE" firstAttribute="bottom" secondItem="Rh4-GJ-8ws" secondAttribute="bottom" constant="-35" id="y19-KP-dsg"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="D5p-S4-1Bc"/>
+            </view>
+            <point key="canvasLocation" x="50.724637681159422" y="109.82142857142857"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="main_page_image" width="1080" height="1351"/>
+        <image name="main_page_white" width="716" height="1432"/>
+        <image name="main_page_yellow" width="827" height="1668"/>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageControllerCollectionViewCell" customModule="Src" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLk-9A-SFE">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="152"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page_image" translatesAutoresizingMaskIntoConstraints="NO" id="rpi-Xf-uUX">
+                                <rect key="frame" x="-5" y="0.0" width="284" height="152"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rpi-Xf-uUX" firstAttribute="leading" secondItem="yLk-9A-SFE" secondAttribute="leading" constant="-5" id="0Bg-IP-BRx"/>
+                            <constraint firstAttribute="trailing" secondItem="rpi-Xf-uUX" secondAttribute="trailing" constant="-5" id="KcR-li-1AF"/>
+                            <constraint firstItem="rpi-Xf-uUX" firstAttribute="top" secondItem="yLk-9A-SFE" secondAttribute="top" id="XlE-fu-VYR"/>
+                            <constraint firstAttribute="bottom" secondItem="rpi-Xf-uUX" secondAttribute="bottom" id="ga2-lg-bfl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yLk-9A-SFE" secondAttribute="bottom" id="ImW-X6-0Fa"/>
+                <constraint firstAttribute="trailing" secondItem="yLk-9A-SFE" secondAttribute="trailing" id="QXO-W5-mBw"/>
+                <constraint firstItem="yLk-9A-SFE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mWR-yj-c3p"/>
+                <constraint firstItem="yLk-9A-SFE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nco-VL-C98"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="274" height="152"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="pageControllImage" destination="rpi-Xf-uUX" id="FKj-UK-X8q"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="88.392857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="page_image" width="498" height="351"/>
+    </resources>
+</document>

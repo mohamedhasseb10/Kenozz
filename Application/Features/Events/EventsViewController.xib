@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="s3i-jA-bGn" customClass="EventsViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="dip-3H-DoN">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="haX-qI-PLH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topimage" translatesAutoresizingMaskIntoConstraints="NO" id="FAK-Tk-roe">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dw-N7-KWm">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الفعاليات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-pt-2lS">
+                                <rect key="frame" x="168" y="15.5" width="78" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-96-AoG">
+                                <rect key="frame" x="385" y="16.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="LT9-tg-xy8"/>
+                                    <constraint firstAttribute="height" constant="22" id="atl-ei-HlQ"/>
+                                </constraints>
+                                <state key="normal" image="menu2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XbC-pt-2lS" firstAttribute="centerY" secondItem="9dw-N7-KWm" secondAttribute="centerY" id="U0a-Ri-NSE"/>
+                            <constraint firstAttribute="height" constant="55" id="blG-Zq-xCe"/>
+                            <constraint firstItem="ykv-96-AoG" firstAttribute="centerY" secondItem="XbC-pt-2lS" secondAttribute="centerY" id="sWb-Hp-XFD"/>
+                            <constraint firstAttribute="trailing" secondItem="ykv-96-AoG" secondAttribute="trailing" constant="7" id="yOG-sb-vbi"/>
+                            <constraint firstItem="XbC-pt-2lS" firstAttribute="centerX" secondItem="9dw-N7-KWm" secondAttribute="centerX" id="z65-jw-grZ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1E-lT-9mE">
+                        <rect key="frame" x="7" y="54" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="92g-nn-d9O"/>
+                            <constraint firstAttribute="height" constant="25" id="O2B-nX-coU"/>
+                        </constraints>
+                        <state key="normal" image="ic_back"/>
+                        <connections>
+                            <action selector="backButtonAction:" destination="s3i-jA-bGn" eventType="touchUpInside" id="pYB-nZ-dUb"/>
+                        </connections>
+                    </button>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iTr-XH-UG7">
+                        <rect key="frame" x="8" y="161" width="398" height="701"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JHO-NQ-qjc">
+                        <rect key="frame" x="8" y="114" width="398" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkl-rZ-14e">
+                                <rect key="frame" x="0.0" y="0.0" width="199" height="35"/>
+                                <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="الفعاليات السابقة">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="previousEventsAction:" destination="s3i-jA-bGn" eventType="touchUpInside" id="Z1J-X9-ame"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcv-i9-t1o">
+                                <rect key="frame" x="199" y="0.0" width="199" height="35"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.50588235290000005" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="الفعاليات القادمة">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="commingEventsAction:" destination="s3i-jA-bGn" eventType="touchUpInside" id="Ak8-5v-uoI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="vKa-gy-QqP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.97632938619999998" green="0.98094826940000002" blue="0.98380786180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Dkv-mh-9eh" firstAttribute="trailing" secondItem="JHO-NQ-qjc" secondAttribute="trailing" constant="8" id="A7d-mR-Jxz"/>
+                    <constraint firstItem="haX-qI-PLH" firstAttribute="top" secondItem="dip-3H-DoN" secondAttribute="top" id="A90-EJ-l93"/>
+                    <constraint firstItem="JHO-NQ-qjc" firstAttribute="top" secondItem="FAK-Tk-roe" secondAttribute="bottom" constant="20" id="CPK-lu-kmc"/>
+                    <constraint firstItem="9dw-N7-KWm" firstAttribute="leading" secondItem="Dkv-mh-9eh" secondAttribute="leading" id="G19-F5-psT"/>
+                    <constraint firstItem="Dkv-mh-9eh" firstAttribute="trailing" secondItem="haX-qI-PLH" secondAttribute="trailing" id="MSB-E6-voS"/>
+                    <constraint firstItem="haX-qI-PLH" firstAttribute="leading" secondItem="Dkv-mh-9eh" secondAttribute="leading" id="MUb-7n-YUe"/>
+                    <constraint firstItem="FAK-Tk-roe" firstAttribute="leading" secondItem="9dw-N7-KWm" secondAttribute="leading" id="PCE-3l-Pot"/>
+                    <constraint firstItem="Dkv-mh-9eh" firstAttribute="trailing" secondItem="9dw-N7-KWm" secondAttribute="trailing" id="Udp-4v-PGO"/>
+                    <constraint firstAttribute="bottom" secondItem="haX-qI-PLH" secondAttribute="bottom" id="VXC-cW-hwf"/>
+                    <constraint firstItem="9dw-N7-KWm" firstAttribute="top" secondItem="Dkv-mh-9eh" secondAttribute="top" constant="-5" id="XMW-MN-7k8"/>
+                    <constraint firstItem="JHO-NQ-qjc" firstAttribute="leading" secondItem="Dkv-mh-9eh" secondAttribute="leading" constant="8" id="bkX-eE-0rK"/>
+                    <constraint firstItem="FAK-Tk-roe" firstAttribute="bottom" secondItem="9dw-N7-KWm" secondAttribute="bottom" id="dVc-uC-Kj6"/>
+                    <constraint firstItem="iTr-XH-UG7" firstAttribute="leading" secondItem="JHO-NQ-qjc" secondAttribute="leading" id="fy6-I2-lNC"/>
+                    <constraint firstItem="t1E-lT-9mE" firstAttribute="leading" secondItem="Dkv-mh-9eh" secondAttribute="leading" constant="7" id="h8B-1A-Oh1"/>
+                    <constraint firstItem="Dkv-mh-9eh" firstAttribute="bottom" secondItem="iTr-XH-UG7" secondAttribute="bottom" id="p1y-cP-CSy"/>
+                    <constraint firstItem="t1E-lT-9mE" firstAttribute="centerY" secondItem="XbC-pt-2lS" secondAttribute="centerY" id="rIQ-A4-hN9"/>
+                    <constraint firstItem="iTr-XH-UG7" firstAttribute="top" secondItem="JHO-NQ-qjc" secondAttribute="bottom" constant="12" id="ref-nV-Kl5"/>
+                    <constraint firstItem="FAK-Tk-roe" firstAttribute="top" secondItem="9dw-N7-KWm" secondAttribute="top" id="tu5-Qw-3ut"/>
+                    <constraint firstItem="iTr-XH-UG7" firstAttribute="trailing" secondItem="JHO-NQ-qjc" secondAttribute="trailing" id="uP8-tM-DHo"/>
+                    <constraint firstItem="FAK-Tk-roe" firstAttribute="trailing" secondItem="9dw-N7-KWm" secondAttribute="trailing" id="x0s-Oe-3Fd"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="Dkv-mh-9eh"/>
+            </view>
+            <connections>
+                <outlet property="commingEventsButton" destination="xcv-i9-t1o" id="UTv-Is-qTT"/>
+                <outlet property="eventsTableView" destination="iTr-XH-UG7" id="E0x-Cm-Fz1"/>
+                <outlet property="previousEventsButton" destination="Gkl-rZ-14e" id="x8L-BD-Uti"/>
+                <outlet property="titleLabel" destination="XbC-pt-2lS" id="Z5k-tP-k1D"/>
+            </connections>
+            <point key="canvasLocation" x="-433.33333333333337" y="82.366071428571431"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="menu2" width="25" height="25"/>
+        <image name="topimage" width="1125" height="264.5"/>
+    </resources>
+</document>

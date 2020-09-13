@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bZv-11-qpS" customClass="PhotoLibraryCollectionViewCell" customModule="Src" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_library_img" translatesAutoresizingMaskIntoConstraints="NO" id="Cvu-2Z-Rpi">
+                        <rect key="frame" x="0.0" y="0.0" width="121" height="91"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Cvu-2Z-Rpi" firstAttribute="top" secondItem="bZv-11-qpS" secondAttribute="top" id="LKr-vw-59D"/>
+                <constraint firstAttribute="bottom" secondItem="Cvu-2Z-Rpi" secondAttribute="bottom" id="OME-jO-kYq"/>
+                <constraint firstItem="Cvu-2Z-Rpi" firstAttribute="leading" secondItem="bZv-11-qpS" secondAttribute="leading" id="cbY-Hh-avh"/>
+                <constraint firstAttribute="trailing" secondItem="Cvu-2Z-Rpi" secondAttribute="trailing" id="g9z-wH-WfR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="TUm-Pu-4fn"/>
+            <size key="customSize" width="121" height="91"/>
+            <connections>
+                <outlet property="photoLibraryImage" destination="Cvu-2Z-Rpi" id="a6J-l6-RqJ"/>
+            </connections>
+            <point key="canvasLocation" x="96.376811594202906" y="84.709821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo_library_img" width="318" height="246"/>
+    </resources>
+</document>

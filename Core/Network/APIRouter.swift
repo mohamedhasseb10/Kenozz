@@ -2,8 +2,8 @@
 //  APIClient.swift
 //  Src
 //
-//  Created by xWARE on 5/3/20.
-//  Copyright © 2020 xWARE. All rights reserved.
+//  Created by BobaHasseb on 5/3/20.
+//  Copyright © 2020 BobaHasseb. All rights reserved.
 //
 
 import Foundation
@@ -16,33 +16,31 @@ protocol APIRouter {
                                   completion: @escaping JSONTaskCompletionHandler)  where T: Codable
     // swiftlint:disable:next function_parameter_count
     func uploadRequest<T: Cachable>(toUrl: URL,
-                                    with data: Data,
-                                    with name: String,
-                                    and image: UIImage?,
-                                    decodingType: T.Type, completion: @escaping JSONTaskCompletionHandler)
-        where T: Codable
+                                    with paramters: [String: String],
+                                    and header: [String: String],
+                                    and name: String,
+                                    decodingType: T.Type,
+                                    completion:
+                                    @escaping JSONTaskCompletionHandler) where T: Codable
 }
 
 extension APIRouter {
     typealias JSONTaskCompletionHandler = (RequestResult<Cachable, RequestError>) -> Void
     // swiftlint:disable:next function_parameter_count
     func uploadRequest<T: Cachable>(toUrl: URL,
-                                    with data: Data,
-                                    with name: String,
-                                    and image: UIImage?,
+                                    with paramters: [String: String],
+                                    and header: [String: String],
+                                    and name: String,
                                     decodingType: T.Type, completion: @escaping JSONTaskCompletionHandler)
         where T: Codable {
         Alamofire.upload(multipartFormData: { multipartFormData in
-            multipartFormData.append(data, withName: name)
-            if let image = image {
-                if let data = image.jpegData(compressionQuality: 0.5) {
-                    multipartFormData.append(data, withName: "image", fileName: "image.jpeg", mimeType: "image/*")
-                }
+            for (key, value) in paramters {
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
             }
         },
                          to: toUrl,
                          method: .post,
-                         headers: nil,
+                         headers: header,
                          encodingCompletion: { encodingResult in
                             switch encodingResult {
                             case .success(request:let upload,
@@ -154,12 +152,16 @@ extension APIRouter {
             }
     }
 }
-func makeRequest(url: URL, parameters: [String: Any]?, header: String?, type: HTTPMethod) -> URLRequest {
+func makeRequest(url: URL, parameters: [String: Any]?, header: [String: String]?, type: HTTPMethod) -> URLRequest {
     var urlRequest = URLRequest(url: url, timeoutInterval: 10)
     do {
         urlRequest.httpMethod = type.rawValue
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        urlRequest.setValue(header, forHTTPHeaderField: "Authorization")
+        if let header = header {
+            for (key, value) in header {
+                urlRequest.setValue(value, forHTTPHeaderField: key)
+            }
+        }
         if let parameters = parameters {
             urlRequest.httpBody   = try JSONSerialization.data(withJSONObject: parameters)
         }

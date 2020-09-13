@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="2Yq-sC-JWc" customClass="NewsViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="9Tu-aL-E55">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fbM-4v-5bT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topimage" translatesAutoresizingMaskIntoConstraints="NO" id="hDj-hM-aeb">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-FE-H0i">
+                        <rect key="frame" x="0.0" y="39" width="414" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاخبار" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-91-y8a">
+                                <rect key="frame" x="178" y="15.5" width="58.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-Io-1WO">
+                                <rect key="frame" x="385" y="16.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Gl4-3l-myo"/>
+                                    <constraint firstAttribute="width" constant="22" id="kwy-wp-879"/>
+                                </constraints>
+                                <state key="normal" image="menu2"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sWa-Io-1WO" firstAttribute="centerY" secondItem="hKM-91-y8a" secondAttribute="centerY" id="5qk-On-St4"/>
+                            <constraint firstAttribute="trailing" secondItem="sWa-Io-1WO" secondAttribute="trailing" constant="7" id="BFE-tU-tfL"/>
+                            <constraint firstAttribute="height" constant="55" id="b3F-A2-2Wp"/>
+                            <constraint firstItem="hKM-91-y8a" firstAttribute="centerX" secondItem="osJ-FE-H0i" secondAttribute="centerX" id="erX-w5-bIs"/>
+                            <constraint firstItem="hKM-91-y8a" firstAttribute="centerY" secondItem="osJ-FE-H0i" secondAttribute="centerY" id="h4M-KP-BbN"/>
+                        </constraints>
+                    </view>
+                    <searchBar userInteractionEnabled="NO" contentMode="redraw" barStyle="black" searchBarStyle="minimal" text="" placeholder="البحث في المجلة" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-Oh-RVq">
+                        <rect key="frame" x="4" y="106" width="406" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Ixi-fD-G32"/>
+                        </constraints>
+                        <offsetWrapper key="searchTextPositionAdjustment" horizontal="100" vertical="0.0"/>
+                        <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="120" vertical="0.0"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n51-bg-hK8">
+                        <rect key="frame" x="8" y="158" width="398" height="704"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" red="0.97632938619999998" green="0.98094826940000002" blue="0.98380786180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="n51-bg-hK8" firstAttribute="leading" secondItem="s2H-pv-IC6" secondAttribute="leading" constant="8" id="3HC-Qu-Tnp"/>
+                    <constraint firstItem="fbM-4v-5bT" firstAttribute="top" secondItem="9Tu-aL-E55" secondAttribute="top" id="74g-xo-dTT"/>
+                    <constraint firstItem="uMx-Oh-RVq" firstAttribute="leading" secondItem="9Tu-aL-E55" secondAttribute="leading" constant="4" id="ClG-TG-JD6"/>
+                    <constraint firstItem="hDj-hM-aeb" firstAttribute="trailing" secondItem="osJ-FE-H0i" secondAttribute="trailing" id="GQt-gE-euy"/>
+                    <constraint firstItem="s2H-pv-IC6" firstAttribute="trailing" secondItem="uMx-Oh-RVq" secondAttribute="trailing" constant="4" id="Ipx-TT-dqw"/>
+                    <constraint firstItem="s2H-pv-IC6" firstAttribute="trailing" secondItem="fbM-4v-5bT" secondAttribute="trailing" id="LTT-Km-x76"/>
+                    <constraint firstItem="hDj-hM-aeb" firstAttribute="bottom" secondItem="osJ-FE-H0i" secondAttribute="bottom" id="O0L-Ox-wdx"/>
+                    <constraint firstItem="s2H-pv-IC6" firstAttribute="trailing" secondItem="n51-bg-hK8" secondAttribute="trailing" constant="8" id="RTT-pU-FE4"/>
+                    <constraint firstItem="osJ-FE-H0i" firstAttribute="leading" secondItem="s2H-pv-IC6" secondAttribute="leading" id="Wac-uT-3U3"/>
+                    <constraint firstItem="hDj-hM-aeb" firstAttribute="leading" secondItem="osJ-FE-H0i" secondAttribute="leading" id="cMO-Hv-quy"/>
+                    <constraint firstItem="uMx-Oh-RVq" firstAttribute="top" secondItem="osJ-FE-H0i" secondAttribute="bottom" constant="12" id="slf-Mh-tlt"/>
+                    <constraint firstItem="n51-bg-hK8" firstAttribute="top" secondItem="uMx-Oh-RVq" secondAttribute="bottom" constant="8" id="stc-Q2-oUa"/>
+                    <constraint firstItem="osJ-FE-H0i" firstAttribute="top" secondItem="s2H-pv-IC6" secondAttribute="top" constant="-5" id="uIo-xX-geu"/>
+                    <constraint firstItem="hDj-hM-aeb" firstAttribute="top" secondItem="osJ-FE-H0i" secondAttribute="top" id="uU6-xm-g8W"/>
+                    <constraint firstAttribute="bottom" secondItem="fbM-4v-5bT" secondAttribute="bottom" id="xrr-Li-hOu"/>
+                    <constraint firstItem="fbM-4v-5bT" firstAttribute="leading" secondItem="s2H-pv-IC6" secondAttribute="leading" id="yJ4-rJ-RMY"/>
+                    <constraint firstItem="s2H-pv-IC6" firstAttribute="trailing" secondItem="osJ-FE-H0i" secondAttribute="trailing" id="z54-Qz-wMR"/>
+                    <constraint firstItem="s2H-pv-IC6" firstAttribute="bottom" secondItem="n51-bg-hK8" secondAttribute="bottom" id="zzl-FW-CBC"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="s2H-pv-IC6"/>
+            </view>
+            <connections>
+                <outlet property="newsTableView" destination="n51-bg-hK8" id="v8U-0Z-13B"/>
+                <outlet property="searchBar" destination="uMx-Oh-RVq" id="sK7-P2-uZJ"/>
+                <outlet property="titleLabel" destination="hKM-91-y8a" id="ZaY-3r-Ptp"/>
+            </connections>
+            <point key="canvasLocation" x="-433.33333333333337" y="82.366071428571431"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="menu2" width="25" height="25"/>
+        <image name="topimage" width="1125" height="264.5"/>
+    </resources>
+</document>

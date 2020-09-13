@@ -18,4 +18,4 @@ ACCOUNT_URL = https:/$()/dev-put-AccountBaseUrl-here
 
 // App Settings
 APP_NAME = Src
-APP_BUNDLE_ID = com.test.Src
+APP_BUNDLE_ID = com.kenoz

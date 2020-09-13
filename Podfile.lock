@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
+  - Cosmos (21.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (5.13.4):
     - Kingfisher/Core (= 5.13.4)
   - Kingfisher/Core (5.13.4)
@@ -12,33 +14,43 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - SideMenu (6.4.9)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Cosmos
+  - IQKeyboardManagerSwift
   - Kingfisher
   - R.swift
   - RxCocoa
   - RxSwift
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cosmos
+    - IQKeyboardManagerSwift
     - Kingfisher
     - R.swift
     - R.swift.Library
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SideMenu
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
 
-PODFILE CHECKSUM: 75e3329722774ceac1049909bdcd3acce78671e0
+PODFILE CHECKSUM: 2fb88a2082bdd35ea96cfa23686acb62ccb64ae5
 
 COCOAPODS: 1.9.1

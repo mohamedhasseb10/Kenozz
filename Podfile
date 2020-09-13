@@ -8,6 +8,9 @@ target 'Src' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'R.swift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SideMenu'
+  pod 'Cosmos'
   target 'SrcTests' do
     inherit! :search_paths
     # Pods for testing

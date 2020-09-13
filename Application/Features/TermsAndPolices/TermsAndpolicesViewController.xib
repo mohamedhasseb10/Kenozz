@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsAndpolicesViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController storyboardIdentifier="HomeViewController" id="43G-ph-2pg" customClass="TermsAndpolicesViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="lIx-ta-Syi">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="E7c-zm-nVO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topimage" translatesAutoresizingMaskIntoConstraints="NO" id="el5-iI-hXS">
+                        <rect key="frame" x="0.0" y="30" width="414" height="55"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TY7-fi-SIz">
+                        <rect key="frame" x="0.0" y="30" width="414" height="55"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBl-F5-Z3S">
+                                <rect key="frame" x="5" y="15" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="YPL-bg-PQW"/>
+                                    <constraint firstAttribute="height" constant="25" id="vBw-Xm-ezs"/>
+                                </constraints>
+                                <state key="normal" image="ic_back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="43G-ph-2pg" eventType="touchUpInside" id="6a4-W1-Y0M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الشروط وسياسة الاستخدام" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-Yy-VQF">
+                                <rect key="frame" x="104.5" y="16.5" width="205.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c2o-Yy-VQF" firstAttribute="centerY" secondItem="TY7-fi-SIz" secondAttribute="centerY" id="5Qr-a2-bz2"/>
+                            <constraint firstAttribute="height" constant="55" id="JUT-ib-RHO"/>
+                            <constraint firstItem="HBl-F5-Z3S" firstAttribute="centerY" secondItem="c2o-Yy-VQF" secondAttribute="centerY" id="Y3d-sE-soa"/>
+                            <constraint firstItem="HBl-F5-Z3S" firstAttribute="leading" secondItem="TY7-fi-SIz" secondAttribute="leading" constant="5" id="b3k-aA-k58"/>
+                            <constraint firstItem="c2o-Yy-VQF" firstAttribute="centerX" secondItem="TY7-fi-SIz" secondAttribute="centerX" id="bFd-eO-k98"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUN-Lp-qCG">
+                        <rect key="frame" x="0.0" y="83" width="414" height="779"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ro-6R-lkC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="779"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uej-i3-UpJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="779"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-Eh-TTo">
+                                                <rect key="frame" x="5" y="10" width="404" height="29"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" red="0.2627450980392157" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SMf-Eh-TTo" secondAttribute="trailing" constant="5" id="U5I-Fs-gfT"/>
+                                            <constraint firstItem="SMf-Eh-TTo" firstAttribute="top" secondItem="uej-i3-UpJ" secondAttribute="top" constant="10" id="fbN-Ng-T5y"/>
+                                            <constraint firstItem="SMf-Eh-TTo" firstAttribute="leading" secondItem="uej-i3-UpJ" secondAttribute="leading" constant="5" id="gZf-dY-Ktu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uej-i3-UpJ" secondAttribute="trailing" id="5cc-57-9KS"/>
+                                    <constraint firstAttribute="bottom" secondItem="uej-i3-UpJ" secondAttribute="bottom" id="XD1-40-QnU"/>
+                                    <constraint firstItem="uej-i3-UpJ" firstAttribute="top" secondItem="1Ro-6R-lkC" secondAttribute="top" id="cS9-IO-YWA"/>
+                                    <constraint firstItem="uej-i3-UpJ" firstAttribute="leading" secondItem="1Ro-6R-lkC" secondAttribute="leading" id="ryu-Bq-egX"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="HU2-lN-IjJ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="b8H-Gg-h36"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ro-6R-lkC" firstAttribute="leading" secondItem="DUN-Lp-qCG" secondAttribute="leading" id="Ak3-QB-YRX"/>
+                            <constraint firstItem="1Ro-6R-lkC" firstAttribute="top" secondItem="DUN-Lp-qCG" secondAttribute="top" id="DQB-te-81I"/>
+                            <constraint firstItem="uej-i3-UpJ" firstAttribute="height" secondItem="DUN-Lp-qCG" secondAttribute="height" priority="250" id="FNo-wM-3eY"/>
+                            <constraint firstItem="uej-i3-UpJ" firstAttribute="width" secondItem="DUN-Lp-qCG" secondAttribute="width" id="lwI-2T-hBi"/>
+                            <constraint firstAttribute="bottom" secondItem="1Ro-6R-lkC" secondAttribute="bottom" id="tPZ-Ur-hU2"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ro-6R-lkC" secondAttribute="trailing" id="yzc-9c-XMD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="E7c-zm-nVO" secondAttribute="bottom" id="0fj-yj-uW0"/>
+                    <constraint firstItem="E7c-zm-nVO" firstAttribute="trailing" secondItem="nlo-cM-jnW" secondAttribute="trailing" id="7av-ec-FAl"/>
+                    <constraint firstItem="DUN-Lp-qCG" firstAttribute="trailing" secondItem="nlo-cM-jnW" secondAttribute="trailing" id="7db-He-5YZ"/>
+                    <constraint firstItem="E7c-zm-nVO" firstAttribute="top" secondItem="lIx-ta-Syi" secondAttribute="top" id="7nh-iM-aH0"/>
+                    <constraint firstItem="TY7-fi-SIz" firstAttribute="trailing" secondItem="nlo-cM-jnW" secondAttribute="trailing" id="AKa-ph-4wR"/>
+                    <constraint firstItem="TY7-fi-SIz" firstAttribute="leading" secondItem="nlo-cM-jnW" secondAttribute="leading" id="Atv-WX-WhJ"/>
+                    <constraint firstItem="DUN-Lp-qCG" firstAttribute="bottom" secondItem="nlo-cM-jnW" secondAttribute="bottom" id="F1s-xO-Jls"/>
+                    <constraint firstItem="el5-iI-hXS" firstAttribute="trailing" secondItem="TY7-fi-SIz" secondAttribute="trailing" id="KMd-f3-VUA"/>
+                    <constraint firstItem="E7c-zm-nVO" firstAttribute="leading" secondItem="nlo-cM-jnW" secondAttribute="leading" id="PAU-Md-VZ9"/>
+                    <constraint firstItem="DUN-Lp-qCG" firstAttribute="top" secondItem="TY7-fi-SIz" secondAttribute="bottom" constant="-2" id="VaP-U2-eyc"/>
+                    <constraint firstItem="el5-iI-hXS" firstAttribute="top" secondItem="TY7-fi-SIz" secondAttribute="top" id="W0J-cv-zNj"/>
+                    <constraint firstItem="el5-iI-hXS" firstAttribute="bottom" secondItem="TY7-fi-SIz" secondAttribute="bottom" id="a37-CW-egT"/>
+                    <constraint firstItem="el5-iI-hXS" firstAttribute="leading" secondItem="TY7-fi-SIz" secondAttribute="leading" id="b54-37-AtS"/>
+                    <constraint firstItem="TY7-fi-SIz" firstAttribute="top" secondItem="lIx-ta-Syi" secondAttribute="top" constant="30" id="df9-8c-rR7"/>
+                    <constraint firstItem="DUN-Lp-qCG" firstAttribute="leading" secondItem="nlo-cM-jnW" secondAttribute="leading" id="ezo-gE-TPH"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="nlo-cM-jnW"/>
+            </view>
+            <connections>
+                <outlet property="policesTextView" destination="SMf-Eh-TTo" id="xRk-Ls-DxI"/>
+            </connections>
+            <point key="canvasLocation" x="1792.753623188406" y="51.5625"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="topimage" width="1125" height="264.5"/>
+    </resources>
+</document>

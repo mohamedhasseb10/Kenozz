@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Account_URL</key>
+	<string>$(Account_URL)</string>
+	<key>AppID</key>
+	<string>901c71d8-0e9e-45cd-8810-cd276a956ea4</string>
+	<key>BASE_URL</key>
+	<string>$(BASE_URL)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -15,11 +21,35 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>GULF_HORSEQ</key>
+	<string>$(GULF_HORSEQ)</string>
+	<key>HIGHCODER</key>
+	<string>$(HIGHCODER)</string>
+	<key>KUWAIT_FACTORIES</key>
+	<string>$(KUWAIT_FACTORIES)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MEDICAL_HIGHCODER</key>
+	<string>$(MEDICAL_HIGHCODER)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>OrganizationID</key>
+	<string>231d897f-54cc-4e63-92d6-dbf5390760b1</string>
+	<key>REGISTRATION_URL</key>
+	<string>$(REGISTRATION_URL)</string>
+	<key>SOUQ_VIS</key>
+	<string>$(SOUQ_VIS)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Raleway-Medium.ttf</string>
+		<string>Raleway-SemiBold.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>SplashStoryboard</string>
 	<key>UIMainStoryboardFile</key>
@@ -31,8 +61,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -41,20 +69,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>OrganizationID</key>
-	<string>231d897f-54cc-4e63-92d6-dbf5390760b1</string>
-	<key>AppID</key>
-	<string>901c71d8-0e9e-45cd-8810-cd276a956ea4</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Raleway-Medium.ttf</string>
-		<string>Raleway-SemiBold.ttf</string>
-	</array>
-	<key>Account_URL</key>
-	<string>$(Account_URL)</string>
-	<key>REGISTRATION_URL</key>
-	<string>$(REGISTRATION_URL)</string>
-	<key>BASE_URL</key>
-	<string>$(BASE_URL)</string>
 </dict>
 </plist>

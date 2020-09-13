@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailsViewController" customModule="Src" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Nn4-Ks-wyd" customClass="NewsDetailsViewController" customModule="Src" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="QJa-KX-9Gs">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-kn-kRU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_section_img" translatesAutoresizingMaskIntoConstraints="NO" id="nbF-Ub-V05">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60w-iN-cMP">
+                        <rect key="frame" x="380" y="56" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="KAS-0o-FAT"/>
+                            <constraint firstAttribute="height" constant="24" id="LMh-JT-3f2"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="menu2"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-oy-YJn">
+                        <rect key="frame" x="10" y="56" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="IFh-Au-jnK"/>
+                            <constraint firstAttribute="height" constant="20" id="jeR-iY-a4U"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="ic_back"/>
+                        <connections>
+                            <action selector="backButtonAction:" destination="Nn4-Ks-wyd" eventType="touchUpInside" id="msm-aa-hQW"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_page_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Gla-AJ-kCA">
+                        <rect key="frame" x="0.0" y="286.5" width="414" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="aKZ-Cc-mqb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="في مجال صناعة الخيول , الصورة تساوي الف كلمة  واحيانا الاف الدولارات" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXv-f1-T86">
+                        <rect key="frame" x="50" y="296.5" width="354" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="ou5-To-21U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fv-a8-oAU">
+                        <rect key="frame" x="12" y="296.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="OYN-cX-Czt"/>
+                            <constraint firstAttribute="height" constant="20" id="kJ7-Gk-a6p"/>
+                        </constraints>
+                        <state key="normal" image="Share"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Af7-cA-an1">
+                        <rect key="frame" x="12" y="328.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WLD-Zh-VgL"/>
+                            <constraint firstAttribute="width" constant="20" id="xs6-dD-Zl8"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Like-2"/>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="eYi-5B-cPG">
+                        <rect key="frame" x="0.0" y="368.5" width="414" height="527.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <string key="text">في هذا الموضوع تحديداً يمكننا القول أن الصورة تساوي ألف كلمة وأحيانًا آلاف الدولارت !
+للصور أهمية كبيرة في بيع الخيل ، أو على الأقل التسويق لها وبالأخص خيل التربية والعروض
+سوق الخيل العربي يواجه بعض التحديات في الوقت الحالي وهذا يجعل الأمر أكثر أهمية من أي وقت مضى، يجب عليك كمالك للخيل اختيار أفضل الصور لخيلك .
+الآن مع وسائل التواصل الاجتماعية غالبًا ما تكون صورة الحصان هي أول ما يلاحظه المشتري ويمكنها أن تجله يتوقف ليعرف المزيد عن الحصان ، الانطباع الأول مهم جدا .
+توضح الاحصائيات أن كثير من الخيل يتم شراؤها بناء على صورة أو مقطع فيديو !
+تقول المصورة ومصممة الجرافيك ، نانسي بيرس
+” الصورة السيئة يمكن أن تقضي على أي إمكانية لبيع حصانك ، تمامًا كما يمكن للصورة العظيمة أن تساهم في بيع حصانك ”</string>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 مارس 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTn-7p-m77">
+                        <rect key="frame" x="345" y="345" width="59" height="11.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bLF-kn-kRU" firstAttribute="bottom" secondItem="QJa-KX-9Gs" secondAttribute="bottom" id="0Rw-A5-dhO"/>
+                    <constraint firstItem="lAP-JI-NIu" firstAttribute="trailing" secondItem="cXv-f1-T86" secondAttribute="trailing" constant="10" id="203-wJ-Fzy"/>
+                    <constraint firstItem="cXv-f1-T86" firstAttribute="top" secondItem="1Fv-a8-oAU" secondAttribute="top" id="2gT-if-vsY"/>
+                    <constraint firstItem="bLF-kn-kRU" firstAttribute="leading" secondItem="lAP-JI-NIu" secondAttribute="leading" id="5a4-XY-TLn"/>
+                    <constraint firstItem="1Fv-a8-oAU" firstAttribute="leading" secondItem="Gla-AJ-kCA" secondAttribute="leading" constant="12" id="Aa1-BS-51t"/>
+                    <constraint firstItem="eYi-5B-cPG" firstAttribute="leading" secondItem="lAP-JI-NIu" secondAttribute="leading" id="C95-FN-fP3"/>
+                    <constraint firstAttribute="bottom" secondItem="eYi-5B-cPG" secondAttribute="bottom" id="CC4-j9-ASu"/>
+                    <constraint firstItem="Gla-AJ-kCA" firstAttribute="leading" secondItem="QJa-KX-9Gs" secondAttribute="leading" id="D8b-Ys-xrr"/>
+                    <constraint firstItem="Af7-cA-an1" firstAttribute="leading" secondItem="1Fv-a8-oAU" secondAttribute="leading" id="HKh-9W-r6X"/>
+                    <constraint firstItem="60w-iN-cMP" firstAttribute="top" secondItem="lAP-JI-NIu" secondAttribute="top" constant="12" id="IJx-6i-maQ"/>
+                    <constraint firstItem="YTn-7p-m77" firstAttribute="trailing" secondItem="cXv-f1-T86" secondAttribute="trailing" id="Kwk-r2-SkA"/>
+                    <constraint firstItem="eYi-5B-cPG" firstAttribute="trailing" secondItem="lAP-JI-NIu" secondAttribute="trailing" id="LY3-8i-Prx"/>
+                    <constraint firstItem="nbF-Ub-V05" firstAttribute="trailing" secondItem="lAP-JI-NIu" secondAttribute="trailing" id="MDF-Hy-ybe"/>
+                    <constraint firstItem="pR6-oy-YJn" firstAttribute="leading" secondItem="lAP-JI-NIu" secondAttribute="leading" constant="10" id="PAU-OX-HaQ"/>
+                    <constraint firstItem="lAP-JI-NIu" firstAttribute="trailing" secondItem="bLF-kn-kRU" secondAttribute="trailing" id="Ppg-5n-GjB"/>
+                    <constraint firstItem="1Fv-a8-oAU" firstAttribute="top" secondItem="Gla-AJ-kCA" secondAttribute="top" constant="10" id="Rb7-AG-gW9"/>
+                    <constraint firstItem="eYi-5B-cPG" firstAttribute="top" secondItem="YTn-7p-m77" secondAttribute="bottom" constant="12" id="X1Y-oU-qUU"/>
+                    <constraint firstItem="nbF-Ub-V05" firstAttribute="leading" secondItem="lAP-JI-NIu" secondAttribute="leading" id="XOs-a5-Az9"/>
+                    <constraint firstItem="cXv-f1-T86" firstAttribute="leading" secondItem="Gla-AJ-kCA" secondAttribute="leading" constant="50" id="YS6-EL-mNP"/>
+                    <constraint firstItem="nbF-Ub-V05" firstAttribute="height" secondItem="bLF-kn-kRU" secondAttribute="height" multiplier="0.4" id="dQ6-6W-JoD"/>
+                    <constraint firstItem="bLF-kn-kRU" firstAttribute="top" secondItem="QJa-KX-9Gs" secondAttribute="top" id="hik-2p-L97"/>
+                    <constraint firstItem="pR6-oy-YJn" firstAttribute="top" secondItem="lAP-JI-NIu" secondAttribute="top" constant="12" id="kAt-J4-dJt"/>
+                    <constraint firstItem="Af7-cA-an1" firstAttribute="top" secondItem="1Fv-a8-oAU" secondAttribute="bottom" constant="12" id="lGa-AJ-g9X"/>
+                    <constraint firstItem="nbF-Ub-V05" firstAttribute="top" secondItem="QJa-KX-9Gs" secondAttribute="top" id="qgr-qN-10J"/>
+                    <constraint firstItem="eYi-5B-cPG" firstAttribute="top" secondItem="Gla-AJ-kCA" secondAttribute="bottom" constant="-8" id="rG5-WX-kQU"/>
+                    <constraint firstAttribute="trailing" secondItem="Gla-AJ-kCA" secondAttribute="trailing" id="rwe-Tr-4sn"/>
+                    <constraint firstItem="lAP-JI-NIu" firstAttribute="trailing" secondItem="60w-iN-cMP" secondAttribute="trailing" constant="10" id="uQl-Q4-6YQ"/>
+                    <constraint firstItem="Gla-AJ-kCA" firstAttribute="bottom" secondItem="nbF-Ub-V05" secondAttribute="bottom" constant="18" id="uT8-sF-o4d"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="lAP-JI-NIu"/>
+            </view>
+            <connections>
+                <outlet property="likeButton" destination="Af7-cA-an1" id="YFV-7t-0Xn"/>
+                <outlet property="mainImage" destination="nbF-Ub-V05" id="HlQ-uw-Q0Q"/>
+                <outlet property="newsDateLabel" destination="YTn-7p-m77" id="Kcl-M6-xog"/>
+                <outlet property="newsDescriptionTextView" destination="eYi-5B-cPG" id="ZUg-lZ-uA9"/>
+                <outlet property="newsTitleLabel" destination="cXv-f1-T86" id="urd-lN-uz4"/>
+                <outlet property="yellowView" destination="Gla-AJ-kCA" id="R8j-uT-koe"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="66"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="Like-2" width="15" height="15"/>
+        <image name="Share" width="17.5" height="17.5"/>
+        <image name="bg" width="1125" height="2436"/>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="main_page_yellow" width="827" height="1668"/>
+        <image name="menu2" width="25" height="25"/>
+        <image name="product_section_img" width="1131" height="1224"/>
+    </resources>
+</document>

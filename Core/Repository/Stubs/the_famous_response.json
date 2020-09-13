@@ -1,0 +1,40 @@
+{
+    "success": true,
+    "data": {
+        "following": "110K",
+        "followers": "250K",
+        "items": [
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            },
+            {
+              "id": "1",
+              "name": "BIZZY HORSE BALL",
+              "price": "6.75 Kwd",
+              "image": null
+            }
+        ]
+    },
+    "message": 200
+}

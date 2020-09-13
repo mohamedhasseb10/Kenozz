@@ -2,8 +2,8 @@
 //  Repository.swift
 //  Src
 //
-//  Created by xWARE on 5/3/20.
-//  Copyright © 2020 xWARE. All rights reserved.
+//  Created by BobaHasseb on 5/3/20.
+//  Copyright © 2020 BobaHasseb. All rights reserved.
 //
 
 import Foundation
@@ -49,18 +49,18 @@ extension Repository {
     }
     // swiftlint:disable:next function_parameter_count
     func uploadData<T: Cachable>(withUrl: URL,
-                                 data: Data,
+                                 paramters: [String: String],
+                                 andHeader: [String: String],
                                  andName: String,
-                                 name: String,
                                  decodingType: T.Type,
                                  strategy: Strategy,
                                  completion: @escaping RepositoryCompletion)
         where T: Codable {
             networkClient
                 .uploadRequest(toUrl: withUrl,
-                               with: data,
-                               with: andName,
-                               and: nil,
+                               with: paramters,
+                               and: andHeader,
+                               and: andName,
                                decodingType: decodingType) { (result) in
                                 switch result {
                                 case .success(let data):
@@ -70,7 +70,7 @@ extension Repository {
                                     }
                                 case .failure(.connectionError):
                                     if strategy == .defaultStrategy {
-                                        let cached: T? = self.cacher.load(fileName: name)
+                                        let cached: T? = self.cacher.load(fileName: andName)
                                         completion(.success(cached))
                                         return
                                     }
