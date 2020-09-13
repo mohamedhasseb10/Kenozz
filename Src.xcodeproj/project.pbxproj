@@ -1180,7 +1180,7 @@
 				8483B26024D49DA800462F24 /* MainPageViewController.xib */,
 			);
 			name = MainPage;
-			path = "الصفحة الرئيسية";
+			path = "الصفحة الرئيسية";
 			sourceTree = "<group>";
 		};
 		848C005724E2D25D00544B34 /* Seller */ = {
@@ -1633,11 +1633,11 @@
 			};
 			buildConfigurationList = 10B8621D23F15FE000F75ABF /* Build configuration list for PBXProject "Src" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ar;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				ar,
+				en,
 			);
 			mainGroup = 10B8621923F15FE000F75ABF;
 			productRefGroup = 10B8622323F15FE000F75ABF /* Products */;
